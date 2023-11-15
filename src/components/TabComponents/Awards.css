@@ -1,0 +1,21 @@
+.accordion1 .accordion-button {
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(19, 87, 207, 1) 0%, rgba(30, 65, 171, 1) 91%) !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: white;
+    font-weight: 700;
+}
+
+.accordion-button:after {
+    /* Note: here that I wrote fill="%23ffffff", this changes the arrow color to #ffffff white (%23 is parsed to #) */
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+.accordion2 .accordion-button {
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(239, 84, 166, 1) 0%, rgba(29, 67, 173, 1) 91%);
+}

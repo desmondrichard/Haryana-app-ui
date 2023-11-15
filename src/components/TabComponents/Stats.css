@@ -1,0 +1,26 @@
+.navLink{
+    position:relative;
+   }
+   
+   .navLink::after{
+     position: absolute;
+     content:"";
+     height:5px;
+     width:0;
+     left:0;
+     bottom:-10px;
+     transition: 1s;
+     background-color: #EFA500;       
+   }
+ 
+ 
+  .navLink:hover:after{
+   width:100%;
+  }
+
+  .navLink:hover{
+    color:#09248c;
+    cursor:pointer;
+  }
+
+  

@@ -1,0 +1,10 @@
+.scrollme {
+    overflow: auto;
+    table-layout: auto !important;
+}
+
+.tableHead {                                                 
+
+    --bs-table-bg: #203EA1;
+    --bs-table-color: white;
+}

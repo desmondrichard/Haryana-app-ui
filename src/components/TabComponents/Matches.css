@@ -1,0 +1,10 @@
+.navBarHead {
+    box-shadow: -3px 7px 12px -1px rgba(0, 0, 0, 0.62);
+    -webkit-box-shadow: -3px 7px 12px -1px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow: -3px 7px 12px -1px rgba(0, 0, 0, 0.62);
+
+}
+
+.textColor{
+    --bs-table-color: #0090EC;
+}
