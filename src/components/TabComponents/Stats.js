@@ -7,6 +7,7 @@ import './Stats.css';
 import { NavLink, Outlet } from 'react-router-dom';
 
 
+
 function Stats() {
   return (
     <div>
@@ -50,7 +51,7 @@ function Stats() {
           </div>
             <Outlet />
         </Container>
-    
+    {/* <Footer /> */}
     </div>
   )
 }

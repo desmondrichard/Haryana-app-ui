@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import { Container } from 'react-bootstrap';
 import { Outlet, NavLink } from 'react-router-dom';
 import './Insights.css';
+
 function Insights() {
   return (
     <div>
@@ -47,7 +48,7 @@ function Insights() {
         </div>
         <Outlet />
       </Container>
-
+    {/* <Footer /> */}
     </div>
   )
 }

@@ -6,6 +6,7 @@ import Form from 'react-bootstrap/Form';
 import Accordion from 'react-bootstrap/Accordion';
 import './Awards.css';
 import Table from 'react-bootstrap/Table';
+
 function Awards() {
   return (
     <div>
@@ -1077,7 +1078,7 @@ function Awards() {
 
 
       </Container>
-
+    {/* <Footer /> */}
     </div>
   )
 }

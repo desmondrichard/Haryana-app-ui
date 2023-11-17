@@ -8,6 +8,7 @@ import Table from 'react-bootstrap/Table';
 import './Bio.css';
 
 
+
 function Bio() {
   return (
     <div>
@@ -439,7 +440,7 @@ function Bio() {
       </Container>
     
   </div>
-
+{/* <Footer /> */}
     </div>
   )
 }

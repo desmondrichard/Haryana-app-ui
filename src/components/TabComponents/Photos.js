@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import MUIGallery from './MUIGallery';
 
 
+
 function Photos() {
 
   return (
@@ -50,6 +51,7 @@ function Photos() {
         <MUIGallery />
     
       </Container>
+      {/* <Footer /> */}
     </div>
   )
 }

@@ -1,0 +1,31 @@
+.bgImg {
+    background-image: url("../../assets/bg-img.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.bg {
+    color: red;
+}
+
+.cardStyle {
+    box-shadow: -4px -5px 17px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -4px -5px 17px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -4px -5px 17px 1px rgba(0, 0, 0, 0.75);
+    transition: all 0.3s;
+}
+
+.cardStyle:hover {
+    transform: scale(1.05);
+}
+
+
+.bi-trophy-fill {
+    color: gold;
+}
+
+.shadow {
+    box-shadow: 1px 7px 19px 11px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 7px 19px 11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 7px 19px 11px rgba(0, 0, 0, 0.75);
+}

@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import './Matches.css';
 import Table from 'react-bootstrap/Table';
 import Card from 'react-bootstrap/Card';
+
 function Matches() {
   return (
     <div>
@@ -367,6 +368,7 @@ function Matches() {
         </Container>
 
       </div>
+      {/* <Footer /> */}
     </div>
   )
 }

@@ -2,6 +2,7 @@ import * as React from 'react';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { Container } from '@mui/material';
+import Footer from '../Footer';
 
 function srcset(image, size, rows = 1, cols = 1) {
   return {
@@ -32,6 +33,7 @@ export default function QuiltedImageList() {
       ))}
     </ImageList>
     </Container>
+    
   );
 }
 

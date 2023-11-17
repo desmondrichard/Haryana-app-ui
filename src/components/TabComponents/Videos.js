@@ -14,6 +14,7 @@ import { useState, createRef } from 'react';
 import 'react-html5video/dist/styles.css';
 
 
+
 function Videos() {
   const [model, setModel] = useState(false);
   let data = [
@@ -35,6 +36,7 @@ function Videos() {
 
   ]
   return (
+    <div>
     <div className='gallery'>
       {data.map((item, index) => {
         let divRef = createRef(null);
@@ -59,7 +61,8 @@ function Videos() {
           </div>
         )
       })}
-
+      </div>
+      {/* <Footer /> */}
     </div>
   )
 }

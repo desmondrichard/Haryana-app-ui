@@ -6,6 +6,7 @@
     font-size: 14px;
     color:#203ea4;
     font-family: 'Rubik', sans-serif;
+    padding-right:17px;
 }
  /*.navbar .navBrand*/
  .navBrand {
@@ -36,7 +37,10 @@
     cursor: pointer;
   }
   
-  
+  .nonarchive{
+    line-height: 2.5 !important;
+  }
+
   .navLink{
    position:relative;
   }
@@ -55,4 +59,8 @@
 
  .navLink:hover:after{
   width:100%;
+ }
+
+ .zIndexAlign{
+  position:relative;
  }
