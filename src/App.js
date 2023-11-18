@@ -24,6 +24,10 @@ import Tournaments from './components/NavBar components/Tournaments';
 import Live from './components/NavBar components/Live';
 import Teams from './components/NavBar components/Teams';
 import Footer from './components/Footer';
+import MenSenior from './components/LiveComponents/MenSenior';
+import Under19 from './components/LiveComponents/Under19';
+import Under16 from './components/LiveComponents/Under16';
+import Under13 from './components/LiveComponents/Under13';
 // import Archive from './components/NavBar components/Archive';
 
 function App() {
@@ -32,7 +36,12 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<NavBar />}>
-            <Route path='live' element={<Live />} />
+            <Route path='live' element={<Live />} >
+              <Route path='mensenior' element={<MenSenior />} />
+              <Route path='under19' element={<Under19 />} />
+              <Route path='under16' element={<Under16 />} />
+              <Route path='under13' element={<Under13 />} />
+            </Route>
             <Route path='tournaments' element={<Tournaments />} />
             <Route path='teams' element={<Teams />} />
             <Route path='bccimatches' element={<BcciMatches />} />
