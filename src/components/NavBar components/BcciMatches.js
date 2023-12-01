@@ -22,14 +22,17 @@ function BcciMatches() {
             <Container style={{ zIndex: '1', marginTop: '-70px' }} >
                 <Card style={{ height: 'auto' }} className='shadow'>
                     <Row style={{ padding: '14px' }}>
-                        <Col xs={12} lg={{ span: 5, offset: 7 }}>
-                            <Form.Select aria-label="Default select example" style={{ backgroundColor: '#F3F3F3', fontSize: '14px', fontWeight: '500', border: 'none', marginBottom: '6px', minWidth: '100%' }}>
+                        <Col xs={12} lg={{ span: 3, offset: 9 }}>
+                        <div style={{width: '180px'}}>
+                            <Form.Select menuPlacement="auto"
+                    menuPosition="fixed" aria-label="Default select example" style={{ backgroundColor: '#F3F3F3', fontSize: '14px', fontWeight: '500', border: 'none', marginBottom: '6px', minWidth: '100%' }}>
                                 <option value="1">FILTER BY SEASON</option>
                                 <option value="2">2019 - 2020</option>
                                 <option value="3">2018 - 2019</option>
                                 <option value="4">2017 - 2018</option>                                                                                        
                                 <option value="5">2016 - 2017</option>
                             </Form.Select>
+                            </div>
                         </Col>
                     </Row>
                     <Container style={{ backgroundColor: 'pink', borderRadius: '5px', maxWidth: '1050px' }} className='cardStyle'>

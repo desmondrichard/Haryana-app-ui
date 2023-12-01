@@ -8,16 +8,16 @@ import Image from 'react-bootstrap/Image';
 import { NavLink, Outlet } from 'react-router-dom';
 function NavBar() {
     return (
-        <div>
-            <Navbar collapseOnSelect expand="lg" className='Navbar' sticky="top" style={{ zIndex: 5, backgroundColor: 'white' }} >
-                <Container className='Container zIndexAlign'>
+        <>
+            <Navbar collapseOnSelect expand="lg" className='Navbar ' sticky='top' style={{ zIndex: 5, backgroundColor: 'white' }} >
+                <Container className='Container zIndexAlign '>
                     <Image style={{ width: "90px", height: "85px", marginRight: "14px" }} src={require('../assets/logo.png')} className='image' roundedCircle></Image>
                     <Navbar.Brand className='navBrand' >HARYANA CRICKET ASSOCIATION</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto">
-                            <NavLink className='nav-bar-link nonarchive' to="live" style={{ textDecoration: 'none' }}><i style={{ fontSize: "12px" }} className="bi bi-circle-fill iconCust"></i><span className='a  navLink'>LIVE <span style={{ color: 'black' }}>(9)</span></span> </NavLink>
-                            <NavLink className='nav-bar-link nonarchive' to="tournaments" style={{ textDecoration: 'none' }}><span className='a navLink' >TOURNAMENTS</span></NavLink>
+                            <NavLink className='nav-bar-link py-2' to="live" style={{ textDecoration: 'none' }}><i style={{ fontSize: "12px" }} className="bi bi-circle-fill iconCust"></i><span className='a  navLink'>LIVE <span style={{ color: 'black' }}>(9)</span></span> </NavLink>
+                            <NavLink className='nav-bar-link py-2 ' to="tournaments" style={{ textDecoration: 'none' }}><span className='a navLink'>TOURNAMENTS</span></NavLink>
 
                             <NavDropdown
                                 id="nav-dropdown-dark-example"
@@ -34,14 +34,19 @@ function NavBar() {
                                 </NavDropdown.Item>
                             </NavDropdown>
 
-                            <NavLink className='nav-bar-link nonarchive' to="teams" style={{ textDecoration: 'none' }}><span className='a navLink'>TEAMS</span></NavLink>
-                            <NavLink className='nav-bar-link nonarchive' to="bccimatches" style={{ textDecoration: 'none' }}><span className='a navLink'>BCCI MATCHES</span></NavLink>
+                            <NavLink className='nav-bar-link py-2' to="teams" style={{ textDecoration: 'none' }}><span className='a navLink'>TEAMS</span></NavLink>
+                            <NavLink className='nav-bar-link py-2' to="bccimatches" style={{ textDecoration: 'none' }}><span className='a navLink'>BCCI MATCHES</span></NavLink>
                         </Nav>
+
                     </Navbar.Collapse>
+
                 </Container>
+
             </Navbar>
+
             <Outlet />
-        </div>
+        </>
+
     )
 }
 

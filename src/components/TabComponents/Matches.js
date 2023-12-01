@@ -6,10 +6,15 @@ import Col from 'react-bootstrap/Col';
 import './Matches.css';
 import Table from 'react-bootstrap/Table';
 import Card from 'react-bootstrap/Card';
+import Box from '../Box';
+import Tabs from '../Tabs';
+
 
 function Matches() {
   return (
     <div>
+      <Box />
+      <Tabs className='position-absolute top-50' />
       <Container>
         <div className='my-4 border rounded p-2 navBarHead'>
           <Row>
@@ -19,7 +24,9 @@ function Matches() {
             <Col xs={12} lg={6}>
               <Row>
                 <Col lg={6}>
-                  <Form.Select aria-label="Default select example" style={{ backgroundColor: '#F3F3F3', fontSize: '14px', fontWeight: '500', border: 'none', marginBottom: '6px', minWidth: '100%' }}>
+                <div style={{width: '180px'}}>
+                  <Form.Select aria-label="Default select example" menuPlacement="auto"
+                    menuPosition="fixed" style={{ backgroundColor: '#F3F3F3', fontSize: '14px', fontWeight: '500', border: 'none', marginBottom: '6px', minWidth: '100%' }}>
                     <option value="1">ALL CATEGORY</option>
                     <option value="2">MEN SENIOR</option>
                     <option value="3">UNDER-23</option>
@@ -27,14 +34,18 @@ function Matches() {
                     <option value="2">UNDER-16</option>
                     <option value="3">UNDER-14</option>
                   </Form.Select>
+                  </div>
                 </Col>
                 <Col lg={6}>
-                  <Form.Select aria-label="Default select example" style={{ backgroundColor: '#F3F3F3', fontSize: '14px', fontWeight: '500', border: 'none', minWidth: '100%' }}>
+                <div style={{width: '180px'}}>
+                  <Form.Select menuPlacement="auto"
+                    menuPosition="fixed" aria-label="Default select example" style={{ backgroundColor: '#F3F3F3', fontSize: '14px', fontWeight: '500', border: 'none', minWidth: '100%' }}>
                     <option value="1">ALL FORMAT</option>
                     <option value="2">TEST</option>
                     <option value="3">LIMITED OVERS</option>
                     <option value="1">T20</option>
                   </Form.Select>
+                  </div>
                 </Col>
               </Row>
             </Col>

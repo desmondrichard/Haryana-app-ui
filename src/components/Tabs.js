@@ -3,13 +3,13 @@ import Nav from 'react-bootstrap/Nav';
 import { NavLink } from 'react-router-dom';
 import './Tabs.css';
 import { Col, Container, Row } from 'react-bootstrap';
-// import Container from 'react-bootstrap/Container';
+
 function Tabs() {
     return (
         <Container className='a'>
         <Row className='justify-content-center'>
             <Col xs={12} sm={12} lg={12} >
-                <Nav style={{ backgroundColor: "white", borderRadius: '6px',width:'100%',marginTop:'-30px',padding:'8px'}} className='navs' >
+                <Nav style={{ backgroundColor: "white",width:'100%',marginTop:'-30px',padding:'8px'}} className='navs' >
                     <NavLink className='nav-bar-link' to="/">BIO</NavLink>
                     <NavLink className='nav-bar-link' to="/stats">STATS</NavLink>
                     <NavLink className='nav-bar-link' to="/insights">INSIGHTS</NavLink>

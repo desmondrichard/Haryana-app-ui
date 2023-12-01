@@ -24,7 +24,7 @@ function MenSenior() {
                             <Col lg={6}>
                                 <Row style={{ paddingRight: '13px' }}>
                                     <Col xs='auto' lg={8} style={{ fontSize: '13px', fontWeight: '500', whiteSpace: 'nowrap' }} className='text-end'>CH BANSI LAL CRICKET STADIUM LAHLI, ROHTAK</Col>
-                                    <Col className='d-none d-lg-block' lg={3} style={{ fontSize: '13px', fontWeight: '500', backgroundColor: '#109600', borderRadius: '6px', paddingTop: '5px', color: 'white', textAlign: 'center', Width: '70px', height: '30px' }} >LIMITED OVERS</Col>
+                                    <Col className='d-none d-lg-block' lg={3} style={{ fontSize: '13px', fontWeight: '500', backgroundColor: '#109600', borderRadius: '6px', paddingTop: '6px', color: 'white', textAlign: 'center', Width: '60px', height: '25px', lineHeight: '0.7' }} >LIMITED OVERS</Col>
                                 </Row>
                             </Col>
                         </Row>
@@ -35,8 +35,8 @@ function MenSenior() {
                                 <Row style={{ fontSize: '13px', backgroundColor: '#BADEC8' }}>
                                     <Col xs={6} md={8}><p style={{ color: '#D20D12', fontWeight: '500' }}>MATCH IN PROGRESS</p></Col>
                                     <Col xs={6} md={4}><p className='text-end'>MIN OV REM 89.5</p></Col>
-                                    <Col xs={6} md={8} style={{ marginTop: '-11px', lineHeight: '0.8' }}><p>GUYANA AMAZON WARRIORS TRAIL BY 123 RUNS</p></Col>
-                                    <Col xs={6} md={4} style={{ marginTop: '-11px', lineHeight: '0.8' }}><p className='text-end'>DAY 3, SESSION 2</p></Col>
+                                    <Col xs={6} md={8} style={{ marginTop: '-12px', lineHeight: '0.8' }}><p>GUYANA AMAZON WARRIORS TRAIL BY 123 RUNS</p></Col>
+                                    <Col xs={6} md={4} style={{ marginTop: '-16px', lineHeight: '0.8' }}><p className='text-end'>DAY 3, SESSION 2</p></Col>
                                 </Row>
                                 <Row>
                                     <Col lg={4}>
@@ -93,7 +93,7 @@ function MenSenior() {
                             <Col lg={6}>
                                 <Row style={{ paddingRight: '13px' }}>
                                     <Col xs='auto' lg={8} style={{ fontSize: '13px', fontWeight: '500', whiteSpace: 'nowrap' }} className='text-end'>CH BANSI LAL CRICKET STADIUM LAHLI, ROHTAK</Col>
-                                    <Col className='d-none d-lg-block' lg={3} style={{ fontSize: '13px', fontWeight: '500', backgroundColor: '#109600', borderRadius: '6px', paddingTop: '5px', color: 'white', textAlign: 'center', Width: '70px', height: '30px' }} >LIMITED OVERS</Col>
+                                    <Col className='d-none d-lg-block' lg={3} style={{ fontSize: '13px', fontWeight: '500', backgroundColor: '#109600', borderRadius: '6px', paddingTop: '6px', color: 'white', textAlign: 'center', height: '25px', lineHeight: '0.7' }} >LIMITED OVERS</Col>
                                 </Row>
                             </Col>
                         </Row>
@@ -162,7 +162,7 @@ function MenSenior() {
                             <Col lg={6}>
                                 <Row style={{ paddingRight: '13px' }}>
                                     <Col xs='auto' lg={8} style={{ fontSize: '13px', fontWeight: '500', whiteSpace: 'nowrap' }} className='text-end'>CH BANSI LAL CRICKET STADIUM LAHLI, ROHTAK</Col>
-                                    <Col className='d-none d-lg-block' lg={3} style={{ fontSize: '13px', fontWeight: '500', backgroundColor: '#109600', borderRadius: '6px', paddingTop: '5px', color: 'white', textAlign: 'center', Width: '70px', height: '30px' }} >LIMITED OVERS</Col>
+                                    <Col className='d-none d-lg-block' lg={3} style={{ fontSize: '13px', fontWeight: '500', backgroundColor: '#109600', borderRadius: '6px', paddingTop: '6px', color: 'white', textAlign: 'center', height: '25px', lineHeight: '0.7' }} >LIMITED OVERS</Col>
                                 </Row>
                             </Col>
                         </Row>

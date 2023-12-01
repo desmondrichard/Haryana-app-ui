@@ -12,6 +12,8 @@ import { useState, createRef } from 'react';
 
 // video player:
 import 'react-html5video/dist/styles.css';
+import Box from '../Box';
+import Tabs from '../Tabs';
 
 
 
@@ -37,6 +39,8 @@ function Videos() {
   ]
   return (
     <div>
+       <Box />
+      <Tabs className='position-absolute top-50' />
     <div className='gallery'>
       {data.map((item, index) => {
         let divRef = createRef(null);

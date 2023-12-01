@@ -2,6 +2,8 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import Container from 'react-bootstrap/Container';
 import MUIGallery from './MUIGallery';
+import Box from '../Box';
+import Tabs from '../Tabs';
 
 
 
@@ -9,6 +11,8 @@ function Photos() {
 
   return (
     <div>
+       <Box />
+      <Tabs className='position-absolute top-50' />
       <Container className='my-3 '>
         <Carousel data-bs-theme="light">
           <Carousel.Item>

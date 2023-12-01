@@ -6,12 +6,19 @@ import Button from 'react-bootstrap/Button';
 import Image from 'react-bootstrap/Image';
 import Table from 'react-bootstrap/Table';
 import './Bio.css';
+import Box from '../Box';
+import Tabs from '../Tabs';
+// import NavBar from '../NavBar';
+
 
 
 
 function Bio() {
   return (
     <div>
+
+      <Box />
+      <Tabs className='position-absolute top-50' />
       <div>
         <Container className='my-3'>
           <Card style={{ width: '100%' }}>
@@ -101,7 +108,7 @@ function Bio() {
           </Card>
 
           {/*Card:2 */}
-          <Card style={{ width: '100%', marginTop: '16px', lineHeight: '1.4'}}>
+          <Card style={{ width: '100%', marginTop: '16px', lineHeight: '1.4' }}>
             <ListGroup variant="flush">
               <Card.Header><p style={{ fontWeight: '700', fontSize: '17px', padding: '0', lineHeight: '0.4', paddingTop: '12px' }}>PLAYER STORY</p></Card.Header>
               <ListGroup.Item style={{ fontSize: '14px' }}>lorem ipsum is simply dummy text of the printing and typesetting industry. lorem ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. it has survived not only five centuries.<hr /></ListGroup.Item>
@@ -113,18 +120,18 @@ function Bio() {
       </div>
 
       {/* <Card style={{ width: '100%', marginTop: '16px', lineHeight: '1.4', zIndex: '-1' }}>*/}
-     
+
       {/* Card:3 */}
       <div>
-      
-          <Container>
+
+        <Container>
           <Card>
             <div style={{ width: '100%' }}>
-              <h2 style={{fontSize:'19px',fontWeight:'700',paddingTop:'15px',paddingLeft:'9px'}}>BATTING STATISTICS</h2>
+              <h2 style={{ fontSize: '19px', fontWeight: '700', paddingTop: '15px', paddingLeft: '9px' }}>BATTING STATISTICS</h2>
               <hr />
             </div>
             <Table responsive hover className='mx-2'>
-              <thead className='tableHead ' style={{fontSize:'14px'}}>
+              <thead className='tableHead ' style={{ fontSize: '14px' }}>
                 <tr>
                   <th style={{ textAlign: 'left', paddingTop: '8px', paddingBottom: '8px' }}>FORMAT</th>
                   <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>MAT</th>
@@ -144,7 +151,7 @@ function Bio() {
                 </tr>
               </thead>
               <tbody>
-                <tr style={{fontSize:'14px'}}>
+                <tr style={{ fontSize: '14px' }}>
                   <td style={{ textAlign: 'left' }} className='py-2'>MULTIDAY</td>
                   <td className='py-2'>45</td>
                   <td className='py-2'>41</td>
@@ -162,8 +169,8 @@ function Bio() {
                   <td style={{ textAlign: 'right' }} className='py-2'>65</td>
 
                 </tr>
-                <tr style={{fontSize:'14px'}}>
-                  <td style={{ textAlign: 'left',whiteSpace:'nowrap' }} className='py-2' >LIMITED OVERS</td>
+                <tr style={{ fontSize: '14px' }}>
+                  <td style={{ textAlign: 'left', whiteSpace: 'nowrap' }} className='py-2' >LIMITED OVERS</td>
                   <td className='py-2' >45</td>
                   <td className='py-2' >41</td>
                   <td className='py-2' >5</td>
@@ -179,7 +186,7 @@ function Bio() {
                   <td className='py-2'>45</td>
                   <td style={{ textAlign: 'right' }} className='py-2'>65</td>
                 </tr>
-                <tr style={{fontSize:'14px'}}>
+                <tr style={{ fontSize: '14px' }}>
                   <td style={{ textAlign: 'left' }} className='py-2'>TWENTY 20</td>
                   <td className='py-2'>45</td>
                   <td className='py-2'>41</td>
@@ -196,7 +203,7 @@ function Bio() {
                   <td className='py-2'>45</td>
                   <td style={{ textAlign: 'right' }} className='py-2'>65</td>
                 </tr>
-                <tr style={{fontSize:'14px'}}>
+                <tr style={{ fontSize: '14px' }}>
                   <td style={{ textAlign: 'left' }} className='py-2'>TTEN</td>
                   <td className='py-2'>45</td>
                   <td className='py-2'>41</td>
@@ -215,232 +222,232 @@ function Bio() {
                 </tr>
               </tbody>
             </Table>
-            </Card>
-          </Container>
-        
+          </Card>
+        </Container>
+
       </div>
 
 
       {/* Card:4 */}
       <div>
+
+        <Container>
+          <Card className='my-3'>
+            <div style={{ width: '100%' }}>
+              <h2 style={{ fontSize: '19px', fontWeight: '700', paddingTop: '15px', paddingLeft: '9px' }}>BOWLING STATISTICS</h2>
+              <hr />
+            </div>
+            <Table responsive hover className='mx-2'>
+              <thead className='tableHead ' style={{ fontSize: '14px' }}>
+                <tr>
+                  <th style={{ textAlign: 'left', paddingTop: '8px', paddingBottom: '8px' }}>FORMAT</th>
+                  <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>MAT</th>
+                  <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>INNS</th>
+                  <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>OVERS</th>
+                  <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>RUNS</th>
+                  <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>BALLS</th>
+                  <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>WKTS</th>
+                  <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>BBI</th>
+                  <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>BBM</th>
+                  <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>AVG</th>
+                  <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>ECO</th>
+                  <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>SR</th>
+                  <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>3W</th>
+                  <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>5W</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style={{ fontSize: '14px' }}>
+                  <td style={{ textAlign: 'left' }} className='py-2'>MULTIDAY</td>
+                  <td className='py-2'>45</td>
+                  <td className='py-2'>41</td>
+                  <td className='py-2'>5</td>
+                  <td className='py-2'>1546</td>
+                  <td className='py-2'>2364</td>
+                  <td className='py-2'>236</td>
+                  <td className='py-2'>236.6</td>
+                  <td className='py-2'>105.23</td>
+                  <td className='py-2'>4</td>
+                  <td className='py-2'>45</td>
+                  <td className='py-2'>231</td>
+                  <td className='py-2'>453</td>
+                  <td className='py-2'>45</td>
+
+
+                </tr>
+                <tr style={{ fontSize: '14px' }}>
+                  <td style={{ textAlign: 'left', whiteSpace: 'nowrap' }} className='py-2' >LIMITED OVERS</td>
+                  <td className='py-2' >45</td>
+                  <td className='py-2' >41</td>
+                  <td className='py-2' >5</td>
+                  <td className='py-2' >1546</td>
+                  <td className='py-2' >2364</td>
+                  <td className='py-2' >236</td>
+                  <td className='py-2' >236.6</td>
+                  <td className='py-2' >105.23</td>
+                  <td className='py-2' >4</td>
+                  <td className='py-2' >45</td>
+                  <td className='py-2' >231</td>
+                  <td className='py-2' >453</td>
+                  <td className='py-2'>45</td>
+
+                </tr>
+                <tr style={{ fontSize: '14px' }}>
+                  <td style={{ textAlign: 'left' }} className='py-2'>TWENTY 20</td>
+                  <td className='py-2'>45</td>
+                  <td className='py-2'>41</td>
+                  <td className='py-2'>5</td>
+                  <td className='py-2'>1546</td>
+                  <td className='py-2'>2364</td>
+                  <td className='py-2'>236</td>
+                  <td className='py-2'>236.6</td>
+                  <td className='py-2'>105.23</td>
+                  <td className='py-2'>4</td>
+                  <td className='py-2'>45</td>
+                  <td className='py-2'>231</td>
+                  <td className='py-2'>453</td>
+                  <td className='py-2'>45</td>
+
+                </tr>
+                <tr style={{ fontSize: '14px' }}>
+                  <td style={{ textAlign: 'left' }} className='py-2'>TTEN</td>
+                  <td className='py-2'>45</td>
+                  <td className='py-2'>41</td>
+                  <td className='py-2'>5</td>
+                  <td className='py-2'>1546</td>
+                  <td className='py-2'>2364</td>
+                  <td className='py-2'>236</td>
+                  <td className='py-2'>236.6</td>
+                  <td className='py-2'>105.23</td>
+                  <td className='py-2'>4</td>
+                  <td className='py-2'>45</td>
+                  <td className='py-2'>231</td>
+                  <td className='py-2'>453</td>
+                  <td className='py-2'>45</td>
+
+                </tr>
+              </tbody>
+            </Table>
+          </Card>
+        </Container>
+
+      </div>
+
+      {/* Card:5 */}
+
+      <div>
+
+        <Container>
+          <Card className='my-3'>
+            <div style={{ width: '100%' }}>
+              <h2 style={{ fontSize: '19px', fontWeight: '700', paddingTop: '15px', paddingLeft: '9px' }}>RECENT 10 MATCHES</h2>
+              <hr />
+            </div>
+            <Table responsive hover className='mx-2'>
+              <thead className='tableHead ' style={{ fontSize: '14px' }}>
+                <tr>
+                  <th style={{ textAlign: 'left', paddingTop: '8px', paddingBottom: '8px' }}>MATCHES</th>
+                  <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>DATE</th>
+                  <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>BATTING</th>
+                  <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>BOWLING</th>
+                  <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>CATCHES</th>
+                  <th style={{ paddingTop: '8px', paddingBottom: '8px', whiteSpace: 'nowrap' }}>RUN OUTS</th>
+                  <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>STUMPINGS</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr style={{ fontSize: '14px' }}>
+                  <td style={{ textAlign: 'left', whiteSpace: 'nowrap' }} className='py-2'>TEAM VS OPP TEAM</td>
+                  <td className='py-2'>27.SEP.2021</td>
+                  <td className='py-2'>41*</td>
+                  <td className='py-2'>3/43</td>
+                  <td className='py-2'>15</td>
+                  <td className='py-2'>2</td>
+                  <td className='py-2'>-</td>
+
+                </tr>
+                <tr style={{ fontSize: '14px' }}>
+                  <td style={{ textAlign: 'left' }} className='py-2'>TEAM VS OPP TEAM</td>
+                  <td className='py-2'>27.SEP.2021</td>
+                  <td className='py-2'>41*</td>
+                  <td className='py-2'>3/43</td>
+                  <td className='py-2'>15</td>
+                  <td className='py-2'>2</td>
+                  <td className='py-2'>-</td>
+
+                </tr>
+                <tr style={{ fontSize: '14px' }}>
+                  <td style={{ textAlign: 'left' }} className='py-2'>TEAM VS OPP TEAM</td>
+                  <td className='py-2'>27.SEP.2021</td>
+                  <td className='py-2'>41*</td>
+                  <td className='py-2'>3/43</td>
+                  <td className='py-2'>15</td>
+                  <td className='py-2'>2</td>
+                  <td className='py-2'>-</td>
+
+                </tr>
+                <tr style={{ fontSize: '14px' }}>
+                  <td style={{ textAlign: 'left' }} className='py-2'>TEAM VS OPP TEAM</td>
+                  <td className='py-2'>27.SEP.2021</td>
+                  <td className='py-2'>41*</td>
+                  <td className='py-2'>3/43</td>
+                  <td className='py-2'>15</td>
+                  <td className='py-2'>2</td>
+                  <td className='py-2'>-</td>
+                </tr>
+                <tr style={{ fontSize: '14px' }}>
+                  <td style={{ textAlign: 'left' }} className='py-2'>TEAM VS OPP TEAM</td>
+                  <td className='py-2'>27.SEP.2021</td>
+                  <td className='py-2'>41*</td>
+                  <td className='py-2'>3/43</td>
+                  <td className='py-2'>15</td>
+                  <td className='py-2'>2</td>
+                  <td className='py-2'>-</td>
+                </tr>
+                <tr style={{ fontSize: '14px' }}>
+                  <td style={{ textAlign: 'left' }} className='py-2'>TEAM VS OPP TEAM</td>
+                  <td className='py-2'>27.SEP.2021</td>
+                  <td className='py-2'>41*</td>
+                  <td className='py-2'>3/43</td>
+                  <td className='py-2'>15</td>
+                  <td className='py-2'>2</td>
+                  <td className='py-2'>-</td>
+                </tr>
+                <tr style={{ fontSize: '14px' }}>
+                  <td style={{ textAlign: 'left' }} className='py-2'>TEAM VS OPP TEAM</td>
+                  <td className='py-2'>27.SEP.2021</td>
+                  <td className='py-2'>41*</td>
+                  <td className='py-2'>3/43</td>
+                  <td className='py-2'>15</td>
+                  <td className='py-2'>2</td>
+                  <td className='py-2'>-</td>
+                </tr>
+                <tr style={{ fontSize: '14px' }}>
+                  <td style={{ textAlign: 'left' }} className='py-2'>TEAM VS OPP TEAM</td>
+                  <td className='py-2'>27.SEP.2021</td>
+                  <td className='py-2'>41*</td>
+                  <td className='py-2'>3/43</td>
+                  <td className='py-2'>15</td>
+                  <td className='py-2'>2</td>
+                  <td className='py-2'>-</td>
+                </tr>
+                <tr style={{ fontSize: '14px' }}>
+                  <td style={{ textAlign: 'left' }} className='py-2'>TEAM VS OPP TEAM</td>
+                  <td className='py-2'>27.SEP.2021</td>
+                  <td className='py-2'>41*</td>
+                  <td className='py-2'>3/43</td>
+                  <td className='py-2'>15</td>
+                  <td className='py-2'>2</td>
+                  <td className='py-2'>-</td>
+                </tr>
+              </tbody>
+            </Table>
+          </Card>
+        </Container>
+
+      </div>
       
-      <Container>
-      <Card className='my-3'>
-        <div style={{ width: '100%' }}>
-          <h2 style={{fontSize:'19px',fontWeight:'700',paddingTop:'15px',paddingLeft:'9px'}}>BOWLING STATISTICS</h2>
-          <hr />
-        </div>
-        <Table responsive hover className='mx-2'>
-          <thead className='tableHead ' style={{fontSize:'14px'}}>
-            <tr>
-              <th style={{ textAlign: 'left', paddingTop: '8px', paddingBottom: '8px' }}>FORMAT</th>
-              <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>MAT</th>
-              <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>INNS</th>
-              <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>OVERS</th>
-              <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>RUNS</th>
-              <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>BALLS</th>
-              <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>WKTS</th>
-              <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>BBI</th>
-              <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>BBM</th>
-              <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>AVG</th>
-              <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>ECO</th>
-              <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>SR</th>
-              <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>3W</th>
-              <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>5W</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style={{fontSize:'14px'}}>
-              <td style={{ textAlign: 'left' }} className='py-2'>MULTIDAY</td>
-              <td className='py-2'>45</td>
-              <td className='py-2'>41</td>
-              <td className='py-2'>5</td>
-              <td className='py-2'>1546</td>
-              <td className='py-2'>2364</td>
-              <td className='py-2'>236</td>
-              <td className='py-2'>236.6</td>
-              <td className='py-2'>105.23</td>
-              <td className='py-2'>4</td>
-              <td className='py-2'>45</td>
-              <td className='py-2'>231</td>
-              <td className='py-2'>453</td>
-              <td className='py-2'>45</td>
-             
-
-            </tr>
-            <tr style={{fontSize:'14px'}}>
-              <td style={{ textAlign: 'left',whiteSpace:'nowrap' }} className='py-2' >LIMITED OVERS</td>
-              <td className='py-2' >45</td>
-              <td className='py-2' >41</td>
-              <td className='py-2' >5</td>
-              <td className='py-2' >1546</td>
-              <td className='py-2' >2364</td>
-              <td className='py-2' >236</td>
-              <td className='py-2' >236.6</td>
-              <td className='py-2' >105.23</td>
-              <td className='py-2' >4</td>
-              <td className='py-2' >45</td>
-              <td className='py-2' >231</td>
-              <td className='py-2' >453</td>
-              <td className='py-2'>45</td>
-            
-            </tr>
-            <tr style={{fontSize:'14px'}}>
-              <td style={{ textAlign: 'left' }} className='py-2'>TWENTY 20</td>
-              <td className='py-2'>45</td>
-              <td className='py-2'>41</td>
-              <td className='py-2'>5</td>
-              <td className='py-2'>1546</td>
-              <td className='py-2'>2364</td>
-              <td className='py-2'>236</td>
-              <td className='py-2'>236.6</td>
-              <td className='py-2'>105.23</td>
-              <td className='py-2'>4</td>
-              <td className='py-2'>45</td>
-              <td className='py-2'>231</td>
-              <td className='py-2'>453</td>
-              <td className='py-2'>45</td>
-            
-            </tr>
-            <tr style={{fontSize:'14px'}}>
-              <td style={{ textAlign: 'left' }} className='py-2'>TTEN</td>
-              <td className='py-2'>45</td>
-              <td className='py-2'>41</td>
-              <td className='py-2'>5</td>
-              <td className='py-2'>1546</td>
-              <td className='py-2'>2364</td>
-              <td className='py-2'>236</td>
-              <td className='py-2'>236.6</td>
-              <td className='py-2'>105.23</td>
-              <td className='py-2'>4</td>
-              <td className='py-2'>45</td>
-              <td className='py-2'>231</td>
-              <td className='py-2'>453</td>
-              <td className='py-2'>45</td>
-           
-            </tr>
-          </tbody>
-        </Table>
-        </Card>
-      </Container>
-    
-  </div>
-
-  {/* Card:5 */}
-
-  <div>
-      
-      <Container>
-      <Card className='my-3'>
-        <div style={{ width: '100%' }}>
-          <h2 style={{fontSize:'19px',fontWeight:'700',paddingTop:'15px',paddingLeft:'9px'}}>RECENT 10 MATCHES</h2>
-          <hr />
-        </div>
-        <Table responsive hover className='mx-2'>
-          <thead className='tableHead ' style={{fontSize:'14px'}}>
-            <tr>
-              <th style={{ textAlign: 'left', paddingTop: '8px', paddingBottom: '8px' }}>MATCHES</th>
-              <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>DATE</th>
-              <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>BATTING</th>
-              <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>BOWLING</th>
-              <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>CATCHES</th>
-              <th style={{ paddingTop: '8px', paddingBottom: '8px',whiteSpace:'nowrap' }}>RUN OUTS</th>
-              <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>STUMPINGS</th>
-
-            </tr>
-          </thead>
-          <tbody>
-            <tr style={{fontSize:'14px'}}>
-              <td style={{ textAlign: 'left',whiteSpace:'nowrap' }} className='py-2'>TEAM VS OPP TEAM</td>
-              <td className='py-2'>27.SEP.2021</td>
-              <td className='py-2'>41*</td>
-              <td className='py-2'>3/43</td>
-              <td className='py-2'>15</td>
-              <td className='py-2'>2</td>
-              <td className='py-2'>-</td>  
-
-            </tr>
-            <tr style={{fontSize:'14px'}}>
-            <td style={{ textAlign: 'left' }} className='py-2'>TEAM VS OPP TEAM</td>
-              <td className='py-2'>27.SEP.2021</td>
-              <td className='py-2'>41*</td>
-              <td className='py-2'>3/43</td>
-              <td className='py-2'>15</td>
-              <td className='py-2'>2</td>
-              <td className='py-2'>-</td>  
-            
-            </tr>
-            <tr style={{fontSize:'14px'}}>
-            <td style={{ textAlign: 'left' }} className='py-2'>TEAM VS OPP TEAM</td>
-              <td className='py-2'>27.SEP.2021</td>
-              <td className='py-2'>41*</td>
-              <td className='py-2'>3/43</td>
-              <td className='py-2'>15</td>
-              <td className='py-2'>2</td>
-              <td className='py-2'>-</td>  
-            
-            </tr>
-            <tr style={{fontSize:'14px'}}>
-            <td style={{ textAlign: 'left' }} className='py-2'>TEAM VS OPP TEAM</td>
-              <td className='py-2'>27.SEP.2021</td>
-              <td className='py-2'>41*</td>
-              <td className='py-2'>3/43</td>
-              <td className='py-2'>15</td>
-              <td className='py-2'>2</td>
-              <td className='py-2'>-</td>  
-            </tr>
-            <tr style={{fontSize:'14px'}}>
-            <td style={{ textAlign: 'left' }} className='py-2'>TEAM VS OPP TEAM</td>
-              <td className='py-2'>27.SEP.2021</td>
-              <td className='py-2'>41*</td>
-              <td className='py-2'>3/43</td>
-              <td className='py-2'>15</td>
-              <td className='py-2'>2</td>
-              <td className='py-2'>-</td>  
-            </tr>
-            <tr style={{fontSize:'14px'}}>
-            <td style={{ textAlign: 'left' }} className='py-2'>TEAM VS OPP TEAM</td>
-              <td className='py-2'>27.SEP.2021</td>
-              <td className='py-2'>41*</td>
-              <td className='py-2'>3/43</td>
-              <td className='py-2'>15</td>
-              <td className='py-2'>2</td>
-              <td className='py-2'>-</td>  
-            </tr>
-            <tr style={{fontSize:'14px'}}>
-            <td style={{ textAlign: 'left' }} className='py-2'>TEAM VS OPP TEAM</td>
-              <td className='py-2'>27.SEP.2021</td>
-              <td className='py-2'>41*</td>
-              <td className='py-2'>3/43</td>
-              <td className='py-2'>15</td>
-              <td className='py-2'>2</td>
-              <td className='py-2'>-</td>  
-            </tr>
-            <tr style={{fontSize:'14px'}}>
-            <td style={{ textAlign: 'left' }} className='py-2'>TEAM VS OPP TEAM</td>
-              <td className='py-2'>27.SEP.2021</td>
-              <td className='py-2'>41*</td>
-              <td className='py-2'>3/43</td>
-              <td className='py-2'>15</td>
-              <td className='py-2'>2</td>
-              <td className='py-2'>-</td>  
-            </tr>
-            <tr style={{fontSize:'14px'}}>
-            <td style={{ textAlign: 'left' }} className='py-2'>TEAM VS OPP TEAM</td>
-              <td className='py-2'>27.SEP.2021</td>
-              <td className='py-2'>41*</td>
-              <td className='py-2'>3/43</td>
-              <td className='py-2'>15</td>
-              <td className='py-2'>2</td>
-              <td className='py-2'>-</td>  
-            </tr>
-          </tbody>
-        </Table>
-        </Card>
-      </Container>
-    
-  </div>
-{/* <Footer /> */}
     </div>
   )
 }

@@ -22,7 +22,7 @@ function Live() {
 
   return (
     <div>
-      <Container fluid style={{ zIndex: '-1', backgroundColor: '#2E4EBE' }}>
+      <Container fluid style={{ backgroundColor: '#2E4EBE' }} >
         <Row style={{ minHeight: '180px' }} className='text-center'>
           <Col xs={12}>
             <h2 style={{ color: 'white', marginTop: '50px' }} >UNDER-19 ONE DAY TROPHY 2022-2023</h2>
@@ -32,13 +32,14 @@ function Live() {
           </Col>
         </Row>
       </Container>
-      <Container style={{ borderRadius: '5px', marginTop: '-35px' }} sticky="top">
-        <Card className='boxShadow mb-4 justify-content-center' style={{ minHeight: '58px' }}>
-          <Card.Body className='padding'>
+      <Container style={{ borderRadius: '5px', marginTop: '-35px' }}>
+        <Card className='boxShadow mb-4 justify-content-center' style={{ minHeight: '58px' }} >
+          {/* Adding zindex: */}
+          <Card.Body className='padding' style={{ fontSize: '16px' }}>
             <Row>
               <Col xs={6} lg={8}>
-                <Row style={{ paddingTop: '5px', whiteSpace: 'nowrap' }}>
-                  <Col sm="auto"><NavLink className='nav-bar-link navLink' to='mensenior' style={{ textDecoration: 'none' }}> MEN SENIOR (9)</NavLink></Col>
+                <Row style={{ paddingTop: '5px', whiteSpace: 'nowrap' }} >
+                  <Col sm="auto"><NavLink className='nav-bar-link navLink' to='' style={{ textDecoration: 'none' }}> MEN SENIOR (9)</NavLink></Col>
                   <Col sm="auto"> <NavLink className='nav-bar-link navLink' to='under19' style={{ textDecoration: 'none' }}>UNDER-19 (5)</NavLink></Col>
                   <Col sm="auto"><NavLink className='nav-bar-link navLink' to='under16' style={{ textDecoration: 'none' }}>UNDER-16 (4)</NavLink></Col>
                   <Col sm="auto"><NavLink className='nav-bar-link navLink' to='under13' style={{ textDecoration: 'none' }}>UNDER-13 (2)</NavLink></Col>
@@ -46,32 +47,33 @@ function Live() {
               </Col>
               <Col lg={4}>
                 <Row>
-                  <Col xs={{ span: 12 }} lg={{ span: 9 }}>
-                    {/* Form:1 search bar */}
-                    {show1 ? <Form className="d-flex">
-                      <Form.Control
-                        type="search"
-                        placeholder="Search here..."
-                        className="me-2"
-                        aria-label="Search"
-                      />
-                    </Form> : null}
-                    {/* Form:2 select fields */}
-                    {show2 ? <Form className="d-flex">
-                      <Form.Select aria-label="select1" style={{ backgroundColor: '#F3F3F3', fontSize: '14px', fontWeight: '500', border: 'none', width: '100%', marginRight: '4px', height: '30px' }}>
-                        <option value="1">FILTER BY TEAM</option>
-                        <option value="2">PANCHKULA</option>
-                        <option value="3">FARIDABAD</option>
-                        <option value="4">HARYANA</option>
-                      </Form.Select>
-                      <Form.Select aria-label="select2" style={{ backgroundColor: '#F3F3F3', fontSize: '14px', fontWeight: '500', border: 'none', width: '66%', height: '30px' }}>
-                        <option value="1">FILTER BY</option>
-                        <option value="2">CHANDIGARH</option>
-                        <option value="3">HARYANA</option>
-                        <option value="4">GURGAON</option>
-                        <option value="5">KURUKSHEKTRA</option>
-                      </Form.Select>
-                    </Form> : null}
+                  <Col>
+                      {/* Form:1 search bar */}
+                      {show1 ? <Form className="d-flex">
+                        <Form.Control
+                          type="search"
+                          placeholder="Search here..."
+                          className="me-2"
+                          aria-label="Search"
+                        />
+                      </Form> : null}
+                      {/* Form:2 select fields */}
+                      {show2 ? <Form className="d-flex">
+                        <Form.Select aria-label="select1" style={{ backgroundColor: '#F3F3F3', fontSize: '14px', fontWeight: '500', border: 'none', width: '100%', marginRight: '4px', height: '30px' }}>
+                          <option value="1">FILTER BY TEAM</option>
+                          <option value="2">PANCHKULA</option>
+                          <option value="3">FARIDABAD</option>
+                          <option value="4">HARYANA</option>
+                        </Form.Select>
+                        <Form.Select aria-label="select2" style={{ backgroundColor: '#F3F3F3', fontSize: '14px', fontWeight: '500', border: 'none', width: '66%', height: '30px' }}>
+                          <option value="1">FILTER BY</option>
+                          <option value="2">CHANDIGARH</option>
+                          <option value="3">HARYANA</option>
+                          <option value="4">GURGAON</option>
+                          <option value="5">KURUKSHEKTRA</option>
+                        </Form.Select>
+                      </Form> : null}
+                    
                   </Col>
                   <Col xs={1}><i className="bi bi-sliders" style={{ fontSize: '23px', cursor: 'pointer' }} onClick={() => Sample1()}></i></Col>
                   <Col xs={1}><i className="bi bi-search" style={{ fontSize: '22px', cursor: 'pointer' }} onClick={() => Sample2()}></i></Col>

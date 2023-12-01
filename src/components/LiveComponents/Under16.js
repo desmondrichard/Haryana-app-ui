@@ -24,7 +24,7 @@ function Under16() {
                             <Col lg={6}>
                                 <Row style={{ paddingRight: '13px' }}>
                                     <Col xs='auto' lg={8} style={{ fontSize: '13px', fontWeight: '500', whiteSpace: 'nowrap' }} className='text-end'>CH BANSI LAL CRICKET STADIUM LAHLI, ROHTAK</Col>
-                                    <Col className='d-none d-lg-block' lg={3} style={{ fontSize: '13px', fontWeight: '500', backgroundColor: '#109600', borderRadius: '6px', paddingTop: '5px', color: 'white', textAlign: 'center', Width: '70px', height: '30px' }} >LIMITED OVERS</Col>
+                                    <Col className='d-none d-lg-block' lg={3} style={{ fontSize: '13px', fontWeight: '500', backgroundColor: '#109600', borderRadius: '6px', paddingTop: '6px', color: 'white', textAlign: 'center', height: '25px',lineHeight:'0.7' }} >LIMITED OVERS</Col>
                                 </Row>
                             </Col>
                         </Row>

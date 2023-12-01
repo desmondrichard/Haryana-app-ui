@@ -6,10 +6,14 @@ import Form from 'react-bootstrap/Form';
 import Accordion from 'react-bootstrap/Accordion';
 import './Awards.css';
 import Table from 'react-bootstrap/Table';
+import Tabs from '../Tabs';
+import Box from '../Box';
 
 function Awards() {
   return (
     <div>
+       <Box />
+      <Tabs className='position-absolute top-50' />
       <Container>
         {/* Nav: */}
         <div className='my-4 border rounded p-2 navBarHead'>
@@ -20,7 +24,9 @@ function Awards() {
             <Col xs={12} lg={6}>
               <Row>
                 <Col lg={6}>
-                  <Form.Select aria-label="Default select example" style={{ backgroundColor: '#F3F3F3', fontSize: '14px', fontWeight: '500', border: 'none', marginBottom: '6px', minWidth: '100%' }}>
+                <div style={{width: '180px'}}>
+                  <Form.Select  menuPlacement="auto"
+                    menuPosition="fixed" aria-label="Default select example" style={{ backgroundColor: '#F3F3F3', fontSize: '14px', fontWeight: '500', border: 'none', marginBottom: '6px', minWidth: '100%' }}>
                     <option value="1">ALL CATEGORY</option>
                     <option value="2">MEN SENIOR</option>
                     <option value="3">UNDER-23</option>
@@ -28,14 +34,18 @@ function Awards() {
                     <option value="2">UNDER-16</option>
                     <option value="3">UNDER-14</option>
                   </Form.Select>
+                  </div>
                 </Col>
                 <Col lg={6}>
-                  <Form.Select aria-label="Default select example" style={{ backgroundColor: '#F3F3F3', fontSize: '14px', fontWeight: '500', border: 'none', minWidth: '100%' }}>
+                <div style={{width: '180px'}}>
+                  <Form.Select  menuPlacement="auto"
+                    menuPosition="fixed" aria-label="Default select example" style={{ backgroundColor: '#F3F3F3', fontSize: '14px', fontWeight: '500', border: 'none', minWidth: '100%' }}>
                     <option value="1">ALL FORMAT</option>
                     <option value="2">TEST</option>
                     <option value="3">LIMITED OVERS</option>
                     <option value="1">T20</option>
                   </Form.Select>
+                  </div>
                 </Col>
               </Row>
             </Col>
@@ -57,7 +67,7 @@ function Awards() {
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>CATCHES</th>
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>RUN OUTS</th>
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>STUMPINGS</th>
-                    <th style={{ textAlign: 'right' }}>GROUND NAME</th>
+                    <th style={{ textAlign: 'center' }}>GROUND NAME</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -160,7 +170,7 @@ function Awards() {
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>CATCHES</th>
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>RUN OUTS</th>
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>STUMPINGS</th>
-                    <th style={{ textAlign: 'right' }}>GROUND NAME</th>
+                    <th style={{ textAlign: 'center' }}>GROUND NAME</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -263,7 +273,7 @@ function Awards() {
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>CATCHES</th>
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>RUN OUTS</th>
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>STUMPINGS</th>
-                    <th style={{ textAlign: 'right' }}>GROUND NAME</th>
+                    <th style={{ textAlign: 'center' }}>GROUND NAME</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -366,7 +376,7 @@ function Awards() {
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>CATCHES</th>
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>RUN OUTS</th>
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>STUMPINGS</th>
-                    <th style={{ textAlign: 'right' }}>GROUND NAME</th>
+                    <th style={{ textAlign: 'center' }}>GROUND NAME</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -469,7 +479,7 @@ function Awards() {
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>CATCHES</th>
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>RUN OUTS</th>
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>STUMPINGS</th>
-                    <th style={{ textAlign: 'right' }}>GROUND NAME</th>
+                    <th style={{ textAlign: 'center' }}>GROUND NAME</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -551,7 +561,7 @@ function Awards() {
                     <td className='py-2'>4</td>
                     <td className='py-2'>2</td>
                     <td className='py-2'>-</td>
-                    <td style={{ textAlign: 'right' }} className='py-2'>RAVINDER PHAGNA CRICKET ACADEMY, FARIDABAD</td>
+                    <td style={{ textAlign: 'center' }} className='py-2'>RAVINDER PHAGNA CRICKET ACADEMY, FARIDABAD</td>
                   </tr>
                 </tbody>
               </Table>
@@ -676,7 +686,7 @@ function Awards() {
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>CATCHES</th>
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>RUN OUTS</th>
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>STUMPINGS</th>
-                    <th style={{ textAlign: 'right' }}>GROUND NAME</th>
+                    <th style={{ textAlign: 'center' }}>GROUND NAME</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -779,7 +789,7 @@ function Awards() {
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>CATCHES</th>
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>RUN OUTS</th>
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>STUMPINGS</th>
-                    <th style={{ textAlign: 'right' }}>GROUND NAME</th>
+                    <th style={{ textAlign: 'center' }}>GROUND NAME</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -883,7 +893,7 @@ function Awards() {
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>CATCHES</th>
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>RUN OUTS</th>
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>STUMPINGS</th>
-                    <th style={{ textAlign: 'right' }}>GROUND NAME</th>
+                    <th style={{ textAlign: 'center' }}>GROUND NAME</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -986,7 +996,7 @@ function Awards() {
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>CATCHES</th>
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>RUN OUTS</th>
                     <th style={{ paddingTop: '8px', paddingBottom: '8px' }}>STUMPINGS</th>
-                    <th style={{ textAlign: 'right' }}>GROUND NAME</th>
+                    <th style={{ textAlign: 'center' }}>GROUND NAME</th>
                   </tr>
                 </thead>
                 <tbody>
